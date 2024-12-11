@@ -1,0 +1,38 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "API para enviar y recibir mensajes MQTT.",
+      "version": "1.0.0",
+      "title": "API MQTT Hola Mundo"
+    },
+    "paths": {
+      "/send-message": {
+        "get": {
+          "summary": "Envía un mensaje a través de MQTT",
+          "description": "Esta ruta envía un mensaje al tema MQTT 'mqtt-hola-mundo'.",
+          "responses": {
+            "200": {
+              "description": "Mensaje enviado",
+              "examples": {
+                "application/json": {
+                  "message": "Mensaje enviado: Hola Mundo desde MQTT"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/hello": {
+        "get": {
+          "summary": "Ruta de prueba",
+          "description": "Una simple ruta de prueba para verificar el servidor.",
+          "responses": {
+            "200": {
+              "description": "Hola Mundo"
+            }
+          }
+        }
+      }
+    }
+  }
+  
